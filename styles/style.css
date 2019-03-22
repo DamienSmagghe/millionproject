@@ -1,0 +1,538 @@
+@font-face {
+    font-family: 'pada';
+    src: url("../assets/fonts/pada.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'din';
+    src: url("../assets/fonts/avenir.otf") format('otf');
+    src: url("../assets/fonts/avenir.ttf") format('truetype');
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: din;
+    color: #111111;
+    background: #ffef16;
+    overflow: hidden;
+}
+.onlyMobile {
+    display: none;
+}
+
+/*
+LANDING
+*/
+
+.landing__container {
+    position: relative;
+    padding: 60px 60px 40px 60px;
+    background: #ffef16;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden; */
+}
+
+.landing__shopping {
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    right: 0;
+    font-family: pada;
+    font-size: 1.35rem;
+    letter-spacing: -0.1rem;
+}
+
+header h1 {
+    font-size: 2.9rem;
+    font-family: pada;
+    letter-spacing: -0.15rem;
+}
+
+header h2 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.landing__product__container {
+    position: absolute;
+    width: 40%;
+    height: 650px;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+}
+
+.landing__product__container img {
+    width: 300px;
+}
+
+.landing__product__description {
+    width: 50%;
+}
+
+.landing__product__description p {
+    text-transform: uppercase;
+    text-align: justify;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.landing__product__carac ul {
+    font-size: 1.25rem;
+}
+
+.landing__product__carac ul .first {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.landing__buttons a{
+    font-family: pada;
+    text-transform: uppercase;
+    background-color: #111111;
+    padding: 1rem 0.9rem;
+    font-size: 1.2rem;
+    color: #ffef16;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.landing__buttons a:last-of-type {
+    margin-left: 20px;
+}
+.landing__snippet {
+    transform: translateY(20px);
+    color: #111111;
+    font-size: 0.8rem;
+}
+.landing__arrow {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0;
+    cursor: pointer;
+    color: white;
+}
+
+.landing__arrow img {
+    width: 40px;
+}
+
+
+
+/*
+SECOND SECTION
+*/
+.section__container {
+    height: 100vh;
+    padding: 50px 60px;
+    background: white;
+    position: relative;
+}
+
+.section__title {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    font-family: pada;
+}
+
+.section__title img {
+    width: 4rem;
+    margin-left: 20px;
+}
+
+.section__faq {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-top: 20px;
+}
+
+.section__faq :nth-child(1) {
+    order: 1;
+}
+
+.section__faq :nth-child(2) {
+    order: 3;
+}
+
+.section__faq :nth-child(3) {
+    order: 5;
+}
+
+.section__faq :nth-child(4) {
+    order: 2;
+}
+
+.section__faq :nth-child(5) {
+    order: 4;
+}
+
+.section__paragraph {
+    width: 47%;
+    margin: 10px 0;
+    text-align: justify;
+
+}
+
+.section__paragraph p,
+.section__paragraph h3 {
+    display: inline;
+}
+
+.section__paragraph h3 {
+    font-weight: bold;
+}
+
+.section__paragraph p {
+    line-height: 1.2;
+}
+
+.section__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.section__card {
+    width: 47%;
+    margin-bottom: 20px;
+}
+.firstly{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section__newsletter {
+    width: 325px;
+    margin: 0 auto;
+    text-align: left;
+    font-family: din;
+}
+.newsletter__suscription {
+    display: flex;
+}
+.section__newsletter h3 {
+    margin: 10px 0;
+    font-size: 0.8rem;
+}
+.section__newsletter .mailInput {
+    padding: 15px;
+    background: #eee;
+    font-family: din;
+    border: 1px solid transparent;
+}
+.section__newsletter .mailInput.success:focus {
+    border: 1px solid #2ecc71;
+    box-shadow: 0 0 2px #2ecc71;
+}
+.section__newsletter .mailInput:focus {
+    border: 1px solid #e74c3c;
+    box-shadow: 0 0 2px #e74c3c;
+}
+.section__newsletter .button {
+    height: 32px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 20px;
+    background: #333333;
+    color: #ffef16;
+    transition: 0.3s ease-out;
+    border-radius: 3px;
+}
+.section__newsletter .button:disabled,
+.button[disabled] {
+    opacity: 0.8;
+}
+.section__progress {
+    text-align: left;
+    width: 325px;
+    padding: 20px 10px;
+    margin: 50px auto;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    font-family: din;
+}
+.section__progress  span {
+    /* float: right; */
+    font-family: din;
+}
+
+.section__progress  a {
+    font-family: pada;
+    color: #111111;
+    text-decoration: none;
+}
+
+.myProgress {
+    left: 10%;
+    position: relative;
+    width: 80%;
+    height: 25px;
+    margin: 10px 0;
+    background-color: #ddd;
+    overflow: hidden;
+}
+
+.myBar {
+    position: absolute;
+    width: 100%;
+    transform-origin: left;
+    will-change: transform;
+    transform: scaleX(0);
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 1s;
+    height: 100%;
+    background-color: #ffef16;
+}
+
+.barInfo {
+    margin: 0 10%;
+}
+
+.barInfoSmall {
+    font-size: 0.7em;
+}
+
+.supporters {
+    margin: 0 10%;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.amount {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #444;
+    letter-spacing: 0.9px;
+    margin-right: 10px;
+}
+.supportersAmount {
+    font-size: 0.8rem;
+}
+
+.supporters a {
+    background: #ffef16;
+    font-family: din;
+    font-size: 1rem;
+    padding: 5px 10px;    
+    border-radius: 3px;
+}
+
+.section__featuredCarousel {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    filter: grayscale(100%);
+}
+.nbs-flexisel-nav-right, .nbs-flexisel-nav-left {
+    display: none;
+}
+/*
+FOOTER
+*/
+footer {
+    background: #ffef16;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__money{
+    position: absolute;
+    left: 50%;
+    top: -25px;
+    transform: translateX(-50%);
+}
+.footer__money img{
+    width: 50px;
+    height: 50px;
+}
+.footer__socials a {
+    color: #111111;
+    padding: 3px;
+    font-size: 18px;
+}
+
+.footer__socials a:hover .fa-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.footer__socials a:hover .fa-facebook-f {
+    color: #3B5998;
+}
+.footer__socials a:hover .fa-twitter {
+    color: #1dcaff;
+}
+.footer__socials a:hover .fa-envelope {
+    color: #444;
+}
+.footer__copyright {
+    transform: translateY(4px);
+    text-align: center;
+    font-size: 0.6rem;
+    color: #111111;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 980px) {
+
+    .onlyDesktop {
+        display: none;
+    }
+    .onlyMobile {
+        display: initial;
+    }
+    body {
+        overflow: auto;
+    }
+    .landing__container {
+        padding: 40px 40px;
+        text-align: center;
+    }
+    .landing__product__description, header {
+        width: 100%;
+    }
+    .landing__product__container {
+        width: 100%;
+        height: 70vh;
+        position: relative;
+        transform: translateY(0);
+        right: 0;
+        top: 0;
+    }
+    .landing__product__description p, header h2 {
+        text-align: center;
+    }
+    .landing__buttons {
+        margin: 40px 0;
+    }
+    .landing__product__carac {
+        margin: 20px;
+    }
+    .landing__container {
+        height: 100%;
+    }
+    .section__container {
+        height: 100%;
+        padding: 40px 40px;
+    }
+    .section__title {
+        justify-content: center;
+    }
+    .section__paragraph {
+        width: 100%;
+    }
+    .section__faq :nth-child(4) { order: 4;}
+    .section__faq :nth-child(5) { order: 5;}
+    .section__cards {
+        flex-direction: column-reverse;
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+    .section__card {
+        width: 100%;
+    }
+    .section__newsletter {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .newsletter__suscription {
+        justify-content: center;
+    }
+    .nbs-flexisel-container {
+        transform: translateY(-20px);
+    }
+    footer {
+        padding: 10px 40px;
+    }
+}
+@media screen and (max-width: 560px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+    header h2 {
+        font-size: 1.2rem;
+    }
+    .landing__product__description p {
+        font-size: 1.1rem;
+    }
+    .landing__product__carac ul {
+        font-size: 1.1rem;
+    }
+    .landing__buttons {
+        font-size: 0.8rem;
+    }
+    .landing__snippet {
+        font-size: 0.7rem;
+        margin: 0 0 20px 0 ;
+    }
+    .landing__container {
+        padding-bottom: 20px;
+    }
+    .landing__container, .section__container, footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .section__cards {
+        margin-bottom: 160px;
+    }
+    .section__featuredCarousel {
+        bottom: 100px;
+    }
+    footer {
+        flex-direction: column;
+
+    }
+    .footer__socials, .footer__share {
+        margin: 20px auto 0 auto;
+    }
+    .footer__socials {
+        width: initial;
+        order: 2
+    }
+    .footer__copyright {
+        order: 3;
+    }
+    .section__progress {
+        width: 100%;
+    }
+
+}
